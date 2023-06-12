@@ -42,8 +42,8 @@ public class Create {
     }
     public void deleteData(int id) {
         String sql = "DELETE FROM student WHERE id = ?";
-        int h = this.jt.update(sql, id);
-        System.out.println(h + "row deleted");
+        int del = this.jt.update(sql, id);
+        System.out.println(del + "row deleted");
     }
 
 }
